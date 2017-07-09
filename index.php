@@ -4,6 +4,7 @@
     <h1>Organized Supply Ordering 0.0.1</h1>
     <script src="mFunctions.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    var selected;
 </head>
 
 <body>
@@ -134,7 +135,7 @@ if ($mysqli->connect_errno) {
 }
 echo $mysqli->host_info . "\n<br>";
 
-$sql = "SELECT SKU, Description FROM order_guide";
+$sql = "SELECT SKU, Description FROM order_guide WHERE Dept LIKE selected";
 $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
