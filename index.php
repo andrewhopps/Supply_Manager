@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
-<!DOCTYPE html>
-
-
-
+<html>
+    
 <head>
-  <script src="mFunctions.js"></script>
-  <meta charset="UTF-8">
-  <title>Login Form</title>
-    <h1>Supplies by Area</h1>
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+    <h1>Organized Supply Ordering</h1>
+    <script src="mFunctions.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  
+    
   <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'CCB')">CANDY / COFFEE / BULK</button>
   <button class="tablinks" onclick="openCity(event, 'B&W')">BEER & WINE</button>
@@ -129,8 +118,21 @@
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
   </div>
-  
-  
-</body>
-</html>
+    
+    
+<div>
+<?php
 
+$host = "localhost";
+$username = "root";
+$user_pass = "AhR3DSTON3";
+$database_in_use = "supply_management";
+$mysqli = new mysqli($host, $username, $user_pass, $database_in_use);
+if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+}
+echo $mysqli->host_info . "\n";
+
+?>
+</div>
+</body>
