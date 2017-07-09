@@ -1,3 +1,11 @@
+<html>
+    
+<head>
+    <script src="mFunctions.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
 <?php 
 $pages = scandir('pages'); 
 $notWanted = array('.', '..'); 
@@ -11,3 +19,5 @@ foreach($pages as $page){
 } // close foreach
 echo '</div>';
 ?>
+
+</html>
