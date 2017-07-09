@@ -120,7 +120,7 @@
   </div>
     
 <br>    
-<div>
+<table>
 <?php
 
 $host = "localhost";
@@ -138,7 +138,7 @@ $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<span>" . "SKU: " . $row["SKU"] . " - Description: " . $row["Description"] . "</span><br>";
+        echo "<tr><td>SKU: " . $row["SKU"] . "</td>" . "<td>Description: " . $row["Description"] . "</td></tr>";
         
     }
 }
@@ -151,5 +151,6 @@ $mysqli->close();
 
 ?>
 
-</div>
+</table>
+
 </body>
