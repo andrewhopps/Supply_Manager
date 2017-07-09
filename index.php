@@ -121,7 +121,7 @@
     
 <br>    
 <table id = "items">
-    <table body>
+    <tbody>
 <?php
 
 $host = "localhost";
@@ -152,7 +152,7 @@ $mysqli->close();
 
 ?>
 
-</table>
+</tbody>
 
 </table>
 
