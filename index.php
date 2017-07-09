@@ -129,13 +129,16 @@ $host = "localhost";
 $username = "root";
 $user_pass = "AhR3DSTON3";
 $database_in_use = "supply_management";
+
+$selected = document.getElementsByName("selected")[0].innerHTML;
+
 $mysqli = new mysqli($host, $username, $user_pass, $database_in_use);
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
 echo $mysqli->host_info . "\n<br>";
 
-$sql = "SELECT SKU, Description FROM order_guide WHERE Dept LIKE selected";
+$sql = "SELECT SKU, Description FROM order_guide WHERE Dept LIKE $selected";
 $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
