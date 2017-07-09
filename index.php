@@ -139,7 +139,7 @@ $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>SKU: </td>" . "<td>" . $row["SKU"] . "</td>" . "<td>Description: </td>" . "<td>" . $row["Description"] . "</td></tr>";
+        echo "<tr><td>SKU: </td>" . "<td>" . $row["SKU"] . "</td>" . "<td>Description: </td>" . "<td>" . $row["Description"] . "</td><td></td></tr>";
         
     }
 }
