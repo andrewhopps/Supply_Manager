@@ -121,6 +121,7 @@
     
     
 <div>
+    </div>
 <?php
 
 $host = "localhost";
@@ -150,5 +151,4 @@ $mysqli->close();
 
 
 ?>
-</div>
 </body>
