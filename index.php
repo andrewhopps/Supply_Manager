@@ -121,6 +121,7 @@
     
 <br>    
 <table id = "items">
+    <table body>
 <?php
 
 $host = "localhost";
@@ -150,6 +151,8 @@ $mysqli->close();
 
 
 ?>
+
+</table>
 
 </table>
 
