@@ -1,7 +1,7 @@
 //TEST
 function getID(){
-    var selected = $(".active").id;
-    $("[Name=selected]").innerHTML = selected;
+    var selected = document.getElementsByClassName("active")[0].id;
+    document.getElementsByName("selected")[0].innerHTML = selected;
 }
 
 function openCity(evt, cityName) {
