@@ -119,9 +119,8 @@
   <p>Tokyo is the capital of Japan.</p>
   </div>
     
-    
+<br>    
 <div>
-    </div>
 <?php
 
 $host = "localhost";
@@ -151,4 +150,6 @@ $mysqli->close();
 
 
 ?>
+
+</div>
 </body>
