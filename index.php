@@ -1,7 +1,7 @@
 <html>
     
 <head>
-    <h1>Organized Supply Ordering</h1>
+    <h1>Organized Supply Ordering 0.0.1</h1>
     <script src="mFunctions.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
