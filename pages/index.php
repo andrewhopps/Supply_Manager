@@ -125,6 +125,8 @@
     <tbody>
 <?php
 
+echo basename($_SERVER['PHP_SELF']);
+
 $host = "localhost";
 $username = "root";
 $user_pass = "AhR3DSTON3";
