@@ -135,7 +135,7 @@ if ($mysqli->connect_errno) {
 echo $mysqli->host_info . "\n";
 
 $sql = "SELECT SKU, Description FROM order_guide";
-$result = $mysqli->query(&sql);
+$result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
