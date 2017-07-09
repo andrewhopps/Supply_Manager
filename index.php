@@ -9,7 +9,7 @@
 <body>
     
   <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'CCB')">CANDY / COFFEE / BULK</button>
+  <button class="tablinks" id="CCB" onclick="openCity(event, 'CCB')">CANDY / COFFEE / BULK</button>
   <button class="tablinks" onclick="openCity(event, 'B&W')">BEER & WINE</button>
   <button class="tablinks" onclick="openCity(event, 'UNI')">UNIFORMS</button>
   <button class="tablinks" onclick="openCity(event, 'KNI')">KNIVES</button>
