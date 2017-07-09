@@ -133,6 +133,22 @@ if ($mysqli->connect_errno) {
 }
 echo $mysqli->host_info . "\n";
 
+$sql = "SELECT SKU, Description FROM order_guide";
+$result = $mysqli->query(&sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo "SKU: " . $row["SKU"] . " - Description: " . $row["Description"] . "<br>";
+        
+    }
+}
+else {
+    echo "0 results";
+}
+$mysqli->close();
+
+
+
 ?>
 </div>
 </body>
