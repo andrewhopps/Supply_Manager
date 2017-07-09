@@ -138,7 +138,7 @@ $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<div>" . "SKU: " . $row["SKU"] . " - Description: " . $row["Description"] . "</div><br>";
+        echo "<span>" . "SKU: " . $row["SKU"] . " - Description: " . $row["Description"] . "</span><br>";
         
     }
 }
