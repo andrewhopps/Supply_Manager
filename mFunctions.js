@@ -1,9 +1,8 @@
-function display(dept) {
-    url = window.origin + "/" + dept + ".html";
-    window.location=url;
-}
-
 //TEST
+function getID(){
+    var selected = $(".active").id;
+    $("[Name=selected]").innerHTML = selected;
+}
 
 function openCity(evt, cityName) {
     // Declare all variables
@@ -25,4 +24,5 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
     
+    getID();
 }
