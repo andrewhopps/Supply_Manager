@@ -125,7 +125,7 @@
     <tbody>
 <?php
 
-echo basename($_SERVER['PHP_SELF']);
+echo basename($_SERVER['PHP_SELF'],'.php');
 
 $host = "localhost";
 $username = "root";
