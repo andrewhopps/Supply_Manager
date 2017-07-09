@@ -130,7 +130,6 @@ $username = "root";
 $user_pass = "AhR3DSTON3";
 $database_in_use = "supply_management";
 
-$selected = document.getElementsByName("selected")[0].innerHTML;
 
 $mysqli = new mysqli($host, $username, $user_pass, $database_in_use);
 if ($mysqli->connect_errno) {
